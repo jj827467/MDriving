@@ -1,3 +1,4 @@
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,7 +7,6 @@ html,
 body {
 	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
-
 }
 
 h1,
@@ -180,6 +180,18 @@ background: #f5f8fa;
 
 .contact-box a:hover {
 	text-decoration: underline;
+}
+/*字型*/
+.special-font {
+	font-size: 30px; /* 设置字体大小，这里使用了一个相对较大的值 */
+	font-family: 'Arial', sans-serif; /* 设置字体族，可以根据需要更改 */
+	color: #f47f19; /* 设置字体颜色，这里使用了一个蓝色调 */
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加文本阴影 */
+	margin: 50px; /* 设置外边距，使文本居中显示（视情况而定） */
+	display: inline-block; /* 使文本可以像块级元素一样设置边距，但又不占据整行 */
+}
+.center-text {
+	text-align: center; /* 设置文本居中 */
 }
 /* ----------------
 Responsive

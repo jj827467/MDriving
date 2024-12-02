@@ -86,15 +86,16 @@ Header section
 	padding-top: 35px;
 }
 .site-logo {
-	float: left;
+	float: right;
 	display: inline-block;
 	padding: 30px 0;
 }
 
 
 .main-menu {
+	float: left;
 	display: inline-block;
-	padding-right: 30px;
+	padding-left: 30px;
 }
 
 .main-menu li {
@@ -215,6 +216,7 @@ Responsive
 		display: none;
 	}
 	.main-menu li a {
+		
 		margin-right: 20px;
 	}
 	
@@ -247,6 +249,7 @@ Responsive
 		padding: 0 15px;
 	}
 	.main-menu {
+		float: left;
 		padding-right: 15px;
 	}
 	.header-input{
@@ -326,6 +329,7 @@ Responsive
 		display: none;
 	}
 	.slicknav_menu {
+		float:left;
 		padding: 0;
 		display: block;
 		background: transparent;
@@ -334,7 +338,7 @@ Responsive
 		padding: 10px 0;
 		padding-right: 10px;
 		border-bottom: 1px solid #111;
-		text-align: right;
+		text-align: left;
 	}
 	.slicknav_menu .header-right .login {
 		border-bottom: none;
