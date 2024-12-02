@@ -63,7 +63,7 @@ p {
 }
 .section-title {
 	text-align: center;
-	margin-bottom: 65px;
+	margin-bottom: 20px;
 }
 
 .pic {
@@ -183,7 +183,7 @@ background: #f5f8fa;
 }
 /*字型*/
 .special-font {
-	font-size: 30px; /* 设置字体大小，这里使用了一个相对较大的值 */
+	font-size: 15px; /* 设置字体大小，这里使用了一个相对较大的值 */
 	font-family: 'Arial', sans-serif; /* 设置字体族，可以根据需要更改 */
 	color: #f47f19; /* 设置字体颜色，这里使用了一个蓝色调 */
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加文本阴影 */
@@ -207,7 +207,7 @@ Responsive
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.section-title h2{
-		font-size: 65px;
+		font-size: 25px;
 	}
 	.spad {
 		padding-top: 750px;
