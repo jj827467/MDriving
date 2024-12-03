@@ -1,197 +1,73 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="zh-Hant">
 
 <head>
-	<title>主頁</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Real estate HTML Template">
-	<meta name="keywords" content="real estate, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>M代駕 - 酒後代駕專家</title>
+    <style>
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="static/css/bootstrap.min.css">
-	<link rel="stylesheet" href="static/css/font-awesome.min.css">
-	<link rel="stylesheet" href="static/css/slicknav.min.css">
-	<link rel="shortcut icon" href="LOGO.ico">
-
-	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="static/css/head.css">
-	<link rel="stylesheet" href="static/css/Carousel.css">
-	<link rel="stylesheet" href="static/css/main.css">
-	<link rel="stylesheet" href="static/css/last.css">
-
+    </style>
 </head>
 
 <body>
-	<!-- 開始黑畫面 -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
-	<!--頭欄位 -->
-	<header class="header-section">
-		<a href="index.html" class="site-logo">
-			<img src="LOGO.ico" alt="" style="width: 30px; height: 30px;">
-		</a>
-		<!--搜索欄-->
-		<nav class="header-nav">
-			<ul class="main-menu">
-				<li><a href="index.html" class="active">代駕服務</a></li>
-			</ul>
-		</nav>
-		<!--右框 -->
-		<div class="contact-box">
-			<a href="index.html"><img src="tg.png"></a>
-			<a href="index.html"><img src="wechat.png"></a>
-			<a href="https://www.instagram.com/mdrive_666?igsh=MXJiazZsZ2R1ZG8yaw=="><img src="ig.png"></a>
-		</div>
-	</header>
-	<!-- 介面輪播 -->
-	<section class="hero-section set-bg" data-setbg="">
-		<div class="banner">
-			<ul class="imgBox">
-				<li class="active"><img src="img/1.jpg" alt=""></li>
-				<li><img src="img/2.jpg" alt=""></li>
-				<li><img src="img/3.jpg" alt=""></li>
-				<li><img src="img/4.jpg" alt=""></li>
-			</ul>
-			<ol><!--自定义属性                自定义属性-->
-				<li data-i="0" class="active" data-c="pas"></li>
-				<li data-i="1" data-c="pas"></li>
-				<li data-i="2" data-c="pas"></li>
-				<li data-i="3" data-c="pas"></li>
-			</ol>
-			<div class="left">&lt;</div> <!--&lt;代表"<"-->
-			<div class="right">&gt;</div> <!--&lt;代表">"-->
-		</div>
+<!--右框 -->
+<div class="contact-box">
+    <a href="index.html"><img src="tg.png"></a>
+    <a href="index.html"><img src="wechat.png"></a>
+    <a href="https://www.instagram.com/mdrive_666?igsh=MXJiazZsZ2R1ZG8yaw==" image="https://"><img src="ig.png"></a>
+</div>
+<div class="container">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="./img/back.jpg" alt="图片1">
+            <img src="./img/1.jpg" alt="图片2">
+            <img src="./img/2.jpg" alt="图片3">
+            <img src="./img/3.jpg" alt="图片4">
+            <img src="./img/4.jpg" alt="图片5">
+        </div>
+        <button class="prev" onclick="prevSlide()"><</button>
+        <button class="next" onclick="nextSlide()">></button>
+    </div>
+</div>
+    <nav>
+        <a href="">公司介紹</a>
+        <a href="#services">服務介紹</a>
+        <a herf="#about">關於我們</a>
+        <a herf="#contact">聯絡我們</a>
+    </nav>
+    <section id="company">
+        <h2>公司介紹：</h2>
+        <p>「M代駕」宗旨要為澳門市民提供高質量和高性價比的代駕服務。公司深知，澳門人不叫代駕是因為價格昂貴，支持「M代駕」將為澳門人提供一個專屬代駕的平台。</p>
+    </section>
+    <section id="services">
+        <h2>服務介紹</h2>
+        <p>「M代駕」專為澳門酒後代駕服務而設，提供專業可靠的高質量代駕服務。我們的司機經過嚴格培訓，遵守道路法則，確保安全送你回家！  </p>
+        <ul>
+            <li>酒後代駕</li>
+            <li>短途代駕</li>
+            <li>商務代駕</li>
+            <li>私人司機</li>
+        </ul>
+    </section>
 
-	</section>
+    <section id="about">
+        <h2>關於我們</h2>
+        <p>「M代駕」是一個以客戶安全為核心的服務公司，擁有多年的經驗和專業團隊。保險法律等問題無需擔心！服務費用透明，隨時隨地輕鬆預約！</p>
+    </section>
 
-	<!-- 中心部份 -->
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <p>如需服務，請聯絡我們：</p>
+        <p>電話：<strong>1234-5678</strong></p>
+        <p>Email：<strong>info@mdaijia.com</strong></p>
+    </section>
 
-
-	<section class="intro-section spad">
-		<!--1 -->
-		<div class="container">
-			<div class="section-title">
-				<div class="special-font">M代駕提提你，開車不喝酒，喝酒不開車。</div>
-			</div>
-			<div class="row intro-first">
-				<div class="col-lg-6 order-lg-2">
-					<h3 class="center-text">關於我們</h3>
-
-				</div>
-				<div class="col-lg-6 order-lg-1">
-					<div class="about-text">
-						<p>「M代駕」提供酒後代駕服務，為酒後駕駛人士提供司機，並安全送抵其住宅範圍。
-							客人只需於一個小時前致電代駕熱線(????)，並說明時間、地點、車牌號碼及車輛型號，「M代駕」便會於指定時間內派出司機致電客人，司機也會按時到達車輛前等候，並安全把客人送抵住宅範圍及把車泊好交還車匙。
-							<br />
-							條款及細則：
-							*價錢會因道路環境及當時天氣有所調高
-							*所有價錢及收費最終由M代駕作最後決定。
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="line">
-				<hr align="center" width="100%" color="#987cb9" size="2">
-			</div>
-			<!--2 -->
-			<div class="row intro-second">
-				<div class="col-lg-6 order-lg-1">
-					<div class="pic">
-
-					</div>
-					<br />
-				</div>
-				<div class="col-lg-6 order-lg-2">
-					<div class=" ">
-						<h3></h3><br />
-						<p>
-						</p>
-						<br>
-					</div>
-				</div>
-			</div>
-			<div class="line">
-				<hr align="center" width="100%" color="#987cb9" size="2">
-			</div>
-
-			<!--3 -->
-			<div class="row intro-first">
-				<div class="col-lg-6 order-lg-2">
-					<div class="pic">
-
-					</div>
-				</div>
-				<div class="col-lg-6 order-lg-1">
-					<div class="about-text">
-						<h3></h3>
-						<p></p>
-						<br>
-					</div>
-				</div>
-			</div>
-			<div class="line">
-				<hr align="center" width="100%" color="#987cb9" size="2">
-			</div>
-			<!--4 -->
-			<div class="row intro-second">
-				<div class="col-lg-6">
-					<div class="pic">
-
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="about-text">
-						<h3></h3>
-						<p></p>
-						<br>
-					</div>
-				</div>
-			</div>
-			<div class="line">
-				<hr align="center" width="100%" color="#987cb9" size="2">
-			</div>
-			<!--5-->
-			<div class="row intro-first">
-				<div class="col-lg-6 order-lg-2">
-					<div class="pic">
-
-					</div>
-				</div>
-				<div class="col-lg-6 order-lg-1 ">
-					<div class="about-text">
-						<h3></h3>
-						<p></p>
-						<br>
-
-					</div>
-				</div>
-			</div>
-			<div class="line">
-				<hr align="center" width="100%" color="#987cb9" size="2">
-			</div>
-		</div>
-	</section>
-
-
-	<!-- 尾部 -->
-	<section class="property-section">
-		<div class="container">
-			<div class="section-title">
-
-			</div>
-		</div>
-	</section>
-
-	<!--====== Javascripts & Jquery ======-->
-	<script src="static/js/min.js"></script>
-	<script src="static/js/bootstrap.min.js"></script>
-	<script src="static/js/slicknav.js"></script>
-	<script src="static/js/magnific-popup.js"></script>
-	<script src="static/js/main.js"></script>
-	<script src="static/js/Carousel.js"></script>
-
+    <footer>
+        <p>&copy; 2024 M代駕. 保留所有權利。</p>
+    </footer>
+    
 </body>
-
+<script src="./static/script.js"></script>
 </html>
