@@ -145,33 +145,55 @@ button.next {
 	text-decoration: underline;
 }
 
-.marquee-container {
-	width: 50%;
+.carousel-container {
+	position: relative;
+	width: 80%;
+	max-width: 600px;
 	overflow: hidden;
-	white-space: nowrap;
-	box-sizing: border-box;
+
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	background-color: #ff6600;
-	margin: auto
+	/* 可選：設置背景色 */
 }
 
-.marquee-content {
-	display: inline-block;
-	padding-left: 10%;
-	animation: marquee 15s linear infinite;
+.carousel-slide {
+	display: flex;
+	flex-direction: column;
+	/* 更改為列布局，因為我們現在是文字 */
+	transition: transform 0.5s ease-in-out;
 }
 
-.marquee-content span {
-	display: inline-block;
+.carousel-item {
+	padding: 20px;
+	/* 為文字添加一些內邊距 */
+	text-align: center;
+	/* 文字居中 */
+
+	/* 可選：為每個項目添加邊框分隔 */
+}
+
+.carousel-item:last-child {
+	border-bottom: none;
+	/* 移除最後一個項目的底部邊框 */
+}
+
+.carousel-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #ff6600;
+	color: white;
+	border: none;
 	padding: 10px;
-
+	cursor: pointer;
+	z-index: 10;
 }
 
-@keyframes marquee {
-	0% {
-		transform: translateX(0);
-	}
+.carousel-button.prev {
+	left: 10px;
+}
 
-	100% {
-		transform: translateX(-100%);
-	}
+.carousel-button.next {
+	right: 10px;
 }

@@ -13,24 +13,18 @@
 
 <body>
     <header>
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <span>
-                    <h1 Style="text-align:center">M代駕</h1>
-                    <p Style="text-align:center">你飲得醉，我送得穩</p>
-                </span>
-                <span>
-                    <h3>M代駕分區收費表</h3>
-                    <p style="font-size: 12px;">澳門區 ---$99</p>
-                    <p style="font-size: 12px;">氹仔區 ---$128</p>
-                    <p style="font-size: 12px;">路氹區 ---$168</p>
-                    <p style="font-size: 12px;">路環區 ---$188</p>
-                </span>
-
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="carousel-item" style="font-size: 14px;">M代駕<br>你飲得醉，我送得穩。</div>
+                <div class="carousel-item" style="font-size: 12px;">M代駕分區收費表<br>澳門區----$99<br>氹仔區 ---$128</div>
+                <div class="carousel-item" style="font-size: 12px;">M代駕分區收費表<br>路氹區 ---$168<br>路環區 ---$188</div>
+                <!-- 添加更多項目作為需要 -->
             </div>
+            <button class="carousel-button prev" onclick="prevSlide()">
+                < </button>
+                    <button class="carousel-button next" onclick="nextSlide()">></button>
         </div>
     </header>
-
     <!--右框 -->
     <div class="contact-box">
         <a href="index.html"><img src="tg.png"></a>
