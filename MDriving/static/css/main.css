@@ -56,8 +56,6 @@ footer {
 	max-width: 700px;
 	/* 可选：限制最大宽度 */
 	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	margin: 0 auto;
 	/* 可选：使容器水平居中 */
 }
@@ -99,7 +97,7 @@ button.next {
 }
 
 .contact-box {
-	z-index: 1000;
+	z-index: 10;
 	position: fixed;
 	right: 0px;
 	top: 50%;
@@ -118,7 +116,7 @@ button.next {
 .contact-box img {
 	max-width: 100%;
 	height: auto;
-	margin-bottom: 10px;
+
 	/* 图片下方的间距 */
 }
 
@@ -147,9 +145,6 @@ button.next {
 
 	max-width: 600px;
 	overflow: hidden;
-
-	border-radius: 10px;
-	box-shadow: 0 14px 8px rgba(0, 0, 0, 0.1);
 	background-color: #ff6600;
 	/* 可選：設置背景色 */
 }
@@ -193,4 +188,63 @@ button.next {
 
 .carousel-button.next {
 	right: 10px;
+}
+
+/* 模态框样式（简单示例） */
+.modal {
+	display: none;
+	/* 初始隐藏 */
+	position: fixed;
+	z-index: 20;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	/* 黑色背景带有透明度 */
+	/* 注意：不再需要justify-content和align-items，因为它们将应用于.modal-content-wrapper */
+}
+
+.modal-content-wrapper {
+	display: flex;
+	justify-content: center;
+	/* 水平居中 */
+	align-items: center;
+	/* 垂直居中 */
+	height: 100%;
+	width: 100%;
+	/* 可以添加padding来避免图片紧贴边缘 */
+	padding: 20px;
+	box-sizing: border-box;
+	/* 确保padding不影响元素的总尺寸 */
+}
+
+.modal-content {
+	max-width: calc(100% - 40px);
+	/* 减去padding的左右各20px */
+	max-height: calc(100% - 40px);
+	/* 减去padding的上下各20px */
+	/* 保持图片的纵横比 */
+	object-fit: contain;
+	/* 或者使用其他值如cover, fill, scale-down等 */
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	/* 根据需要调整 */
+	right: 35px;
+	/* 根据需要调整 */
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
 }

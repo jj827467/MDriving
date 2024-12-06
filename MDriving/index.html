@@ -33,9 +33,15 @@
     </header>
     <!--右框 -->
     <div class="contact-box">
-        <a href="index.html"><img src="tg.png"></a>
-        <a href="index.html"><img src="wechat.png"></a>
-        <a href="https://www.instagram.com/mdrive_666?igsh=MXJiazZsZ2R1ZG8yaw==" image="https://"><img src="ig.png"></a>
+        <a href="index.html" id="link1"><img src="wh.png"></a>
+        <a href="index.html" id="link2"><img src="wechat.png" style="width:80%"></a>
+        <a href="https://www.instagram.com/mdrive_666?igsh=MXJiazZsZ2R1ZG8yaw=="><img src="ig.png"></a>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content-wrapper">
+            <img class="modal-content" id="modalImage" src="your-image-url.jpg">
+        </div>
     </div>
 
     <nav>
@@ -77,5 +83,50 @@
 
 </body>
 <script src="./static/script.js"></script>
+<script>
+    var modals = document.querySelectorAll(".modal");
+
+    // 获取所有打开模态框的链接
+    var links = document.querySelectorAll(".open-modal");
+
+    // 为每个链接添加点击事件监听器
+    links.forEach(function (link) {
+        link.onclick = function (event) {
+            event.preventDefault(); // 阻止链接的默认行为
+
+            // 关闭所有模态框
+            modals.forEach(function (modal) {
+                modal.style.display = "none";
+            });
+
+            // 获取要显示的模态框和图片的标识符
+            var modalId = this.getAttribute("data-modal-id");
+            var imageSrc = this.getAttribute("data-image-src");
+
+            // 显示对应的模态框并设置图片源
+            var modalToShow = document.getElementById(modalId);
+            modalToShow.style.display = "flex";
+            modalToShow.querySelector(".modal-image").src = imageSrc;
+        };
+    });
+
+    // 获取所有关闭按钮
+    var closeButtons = document.querySelectorAll(".close");
+    closeButtons.forEach(function (button) {
+        button.onclick = function () {
+            var modal = this.closest(".modal");
+            modal.style.display = "none";
+        };
+    });
+
+    // 点击模态框外部时关闭模态框（可选）
+    window.onclick = function (event) {
+        modals.forEach(function (modal) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    };
+</script>
 
 </html>
