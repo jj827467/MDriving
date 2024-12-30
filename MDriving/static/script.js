@@ -34,7 +34,7 @@ function nextSlide() {
 }
 
 // 可選：自動播放輪播圖（例如，每3秒切換一次）
-setInterval(nextSlide, 3000);
+//setInterval(nextSlide, 3000);
 
 // 可選：頁面加載時顯示第一個項目（雖然默認情況下已經這樣做了，但為了清晰起見，這裡還是寫出來）
 window.onload = function () {
