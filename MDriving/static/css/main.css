@@ -5,7 +5,7 @@ body {
 	background-color: #f7f7f7;
 }
 
-p{
+p {
 	font-size: 20px;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 footer {
-	background-color: #333;
+	background-color:#ff6600;
 	color: white;
 	text-align: center;
 	padding: 10px 0;
@@ -101,25 +101,31 @@ button.next {
 .contact-box {
 	z-index: 10;
 	position: fixed;
-	right: 0px;
+	right: -15px;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 50px;
-	padding: 10px;
-	background-color: #ffffff;
-	;
-	border: 2px solid #ccc;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	border-radius: 10px;
+	padding: 5px;
+
+
+
 	text-align: center;
 	/* 使内容居中 */
 }
 
 .contact-box img {
-	max-width: 100%;
+	max-width: 80%;
 	height: auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	/* 保持图片的原始宽高比 */
+	object-fit: cover;
+	/* 图片将被裁剪以适应容器，同时保持宽高比 */
+	/* 如果希望图片顶部与文本对齐，可以移除margin-top；若希望底部对齐，则移除margin-bottom */
+	margin-top: 0;
+	/* 根据需求决定是否保留 */
+	margin-bottom: 0;
+	/* 根据需求决定是否保留 */
+	/* 如果需要，可以添加display: block;以消除图片下方的空白间隙（这通常发生在图片是行内元素时） */
+	display: block;
 
 	/* 图片下方的间距 */
 }
